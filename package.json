@@ -7,7 +7,7 @@
     "build": "remix vite:build",
     "dev": "remix vite:dev",
     "lint": "eslint --ignore-path .gitignore --cache --cache-location ./node_modules/.cache/eslint .",
-    "start": "remix-serve ./build/server/index.js",
+    "start": "PORT=3000 npx remix-serve ./build/server/index.js",
     "typecheck": "tsc"
   },
   "dependencies": {
@@ -43,6 +43,7 @@
     "classnames": "^2.5.1",
     "cloudinary": "^2.6.0",
     "clsx": "^2.1.1",
+    "dotenv": "^16.4.7",
     "isbot": "^4.1.0",
     "lucide-react": "^0.482.0",
     "mongoose": "^8.12.1",
