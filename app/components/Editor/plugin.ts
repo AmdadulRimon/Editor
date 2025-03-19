@@ -14,11 +14,13 @@ import Table from '@yoopta/table';
 import Divider from '@yoopta/divider';
 import { uploadToCloudinary } from '~/utils/cloudinary';
 import { PagePlugin } from '../withCustomPlugin/customPlugins/Page';
+import { CarouselPlugin } from '../withCustomPlugin/customPlugins/Carousel';
 
 
 export const plugins = [
   Paragraph,
   PagePlugin,
+  CarouselPlugin,
   HeadingOne,
   HeadingTwo,
   HeadingThree,
