@@ -1,9 +1,9 @@
 import { YooptaPlugin } from '@yoopta/editor';
-import { SeparatorHorizontal } from 'lucide-react';
+import { FileText } from 'lucide-react';
 import { PageRenderElement } from './renders/Page';
 
 const PagePlugin = new YooptaPlugin({
-  type: 'Button',
+  type: 'Page',
   elements: {
     divider: {
       render: PageRenderElement,
@@ -17,7 +17,7 @@ const PagePlugin = new YooptaPlugin({
     display: {
       title: 'New Page',
       description: 'Separate',
-      icon: <SeparatorHorizontal />,
+      icon: <FileText/>,
     },
   },
 });

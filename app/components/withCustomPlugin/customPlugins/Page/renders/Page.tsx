@@ -1,9 +1,10 @@
 import { PluginElementRenderProps } from '@yoopta/editor';
+import FileText from '~/components/Editor/NotionExample/icons/FileText';
 
 const PageRenderElement = ({ attributes, children }: PluginElementRenderProps) => {
   return (
-    <div {...attributes} className="w-full flex relative items-center h-[14px] my-1" contentEditable={false}>
-      New Page
+    <div {...attributes} className="w-full flex relative items-center my-1 cursor-pointer" contentEditable={false}>
+     <FileText/> New Page
     </div>
   );
 };
